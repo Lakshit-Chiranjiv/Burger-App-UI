@@ -44,13 +44,21 @@ class HomePage extends StatelessWidget {
               SafeArea(
                 child: Column(
                   children: [
-                    Text(
-                      'Burger \nBuns',
-                      style: GoogleFonts.bungee(
-                          color: Colors.white,
-                          fontSize: 40,
-                          fontWeight: FontWeight.bold),
-                    )
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'BURGER \nBUNS',
+                          style: GoogleFonts.poppins(
+                              color: Colors.white,
+                              fontSize: 40,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               )
