@@ -44,7 +44,7 @@ class HomePage extends StatelessWidget {
               SafeArea(
                 child: Column(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     Row(
@@ -59,6 +59,51 @@ class HomePage extends StatelessWidget {
                         ),
                       ],
                     ),
+                    const SizedBox(
+                      height: 320,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(20),
+                      child: Container(
+                        height: 200,
+                        width: double.infinity,
+                        child: Stack(
+                          children: [
+                            Column(
+                              children: [
+                                const SizedBox(
+                                  height: 90,
+                                ),
+                                Container(
+                                  width: double.infinity,
+                                  height: 10,
+                                  color: Colors.orange[400]?.withOpacity(0.5),
+                                ),
+                                const SizedBox(
+                                  height: 35,
+                                ),
+                                Container(
+                                  width: double.infinity,
+                                  height: 10,
+                                  color: Colors.orange[400]?.withOpacity(0.5),
+                                ),
+                              ],
+                            ),
+                            Container(
+                              margin: const EdgeInsets.only(top: 60),
+                              child: Text(
+                                'Tasty Food \nGood Food *',
+                                style: GoogleFonts.poppins(
+                                  color: Colors.white,
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    )
                   ],
                 ),
               )
