@@ -29,10 +29,16 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Container(
-          width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height,
-          child: Image.asset('./assets/homeburger.jpg', fit: BoxFit.cover,),
-        ),
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
+            child: Stack(children: [
+              Container(
+                child: Image.asset(
+                  './assets/homeburger.jpg',
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ])),
       ),
     );
   }
