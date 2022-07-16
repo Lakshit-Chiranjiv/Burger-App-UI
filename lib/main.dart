@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,11 +34,26 @@ class HomePage extends StatelessWidget {
             height: MediaQuery.of(context).size.height,
             child: Stack(children: [
               Container(
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height,
                 child: Image.asset(
                   './assets/homeburger.jpg',
                   fit: BoxFit.cover,
                 ),
               ),
+              SafeArea(
+                child: Column(
+                  children: [
+                    Text(
+                      'Burger \nBuns',
+                      style: GoogleFonts.bungee(
+                          color: Colors.white,
+                          fontSize: 40,
+                          fontWeight: FontWeight.bold),
+                    )
+                  ],
+                ),
+              )
             ])),
       ),
     );
