@@ -124,15 +124,32 @@ class HomePage extends StatelessWidget {
                           ),
                           onPressed: () {},
                           child: Text(
-                            'Sign Up',
+                            'Sign in',
                             style: GoogleFonts.poppins(
                                 color: Colors.white,
                                 fontSize: 20,
-                                fontWeight: FontWeight.w600),
+                                fontWeight: FontWeight.w400),
                           ),
                         ),
                       ),
                     ),
+                    const SizedBox(height: 10,),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text("Don't have an account?",
+                          style: GoogleFonts.poppins(
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.w400),),
+                        Text('Sign up',
+                          style: GoogleFonts.poppins(
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.w700,
+                              decoration: TextDecoration.underline),)
+                      ],
+                    )
                   ],
                 ),
               )
