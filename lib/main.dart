@@ -65,8 +65,13 @@ class HomePage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(20),
                       child: Container(
+                        padding: const EdgeInsets.all(5),
                         height: 200,
                         width: double.infinity,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.black.withOpacity(0.4),
+                        ),
                         child: Stack(
                           children: [
                             Column(
