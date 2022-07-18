@@ -125,6 +125,21 @@ class _AppHomePageState extends State<AppHomePage> {
                               width: 2,
                             ),
                           ),
+                          child: Center(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text('🍖', style: TextStyle(
+                                  fontSize: 16,
+                                ),),
+                                SizedBox(width: 5,),
+                                Text('Beef', style: TextStyle(
+                                  fontSize: 16,
+                                  color: tab==0 ? Colors.black : Colors.grey.shade500
+                                ),)
+                              ],
+                            )
+                          ),
                         ),
                       ),
                       const SizedBox(
@@ -146,6 +161,21 @@ class _AppHomePageState extends State<AppHomePage> {
                               color: tab == 1 ? Colors.green.shade400 : Colors.grey.shade400,
                               width: 2,
                             ),
+                          ),
+                          child: Center(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text('🧀', style: TextStyle(
+                                  fontSize: 16,
+                                ),),
+                                SizedBox(width: 5,),
+                                Text('Cheese', style: TextStyle(
+                                  fontSize: 16,
+                                  color: tab==1 ? Colors.black : Colors.grey.shade500
+                                ),)
+                              ],
+                            )
                           ),
                         ),
                       ),
@@ -169,6 +199,21 @@ class _AppHomePageState extends State<AppHomePage> {
                               width: 2,
                             ),
                           ),
+                          child: Center(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text('🍕', style: TextStyle(
+                                  fontSize: 16,
+                                ),),
+                                SizedBox(width: 5,),
+                                Text('Pizza', style: TextStyle(
+                                  fontSize: 16,
+                                  color: tab==2 ? Colors.black : Colors.grey.shade500
+                                ),)
+                              ],
+                            )
+                          ),
                         ),
                       ),
                       const SizedBox(
@@ -190,6 +235,21 @@ class _AppHomePageState extends State<AppHomePage> {
                               color: tab == 3 ? Colors.green.shade400 : Colors.grey.shade400,
                               width: 2,
                             ),
+                          ),
+                          child: Center(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text('🍥', style: TextStyle(
+                                  fontSize: 16,
+                                ),),
+                                SizedBox(width: 5,),
+                                Text('Ramen', style: TextStyle(
+                                  fontSize: 16,
+                                  color: tab==3 ? Colors.black : Colors.grey.shade500
+                                ),)
+                              ],
+                            )
                           ),
                         ),
                       ),
