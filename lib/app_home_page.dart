@@ -103,7 +103,7 @@ class _AppHomePageState extends State<AppHomePage> {
               Container(
                 width: double.infinity,
                 height: 80,
-                color: Colors.green.shade200,
+                // color: Colors.orange.shade200,
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
@@ -119,7 +119,11 @@ class _AppHomePageState extends State<AppHomePage> {
                           width: 100,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(50),
-                            color: tab==0 ? Colors.blue.shade400 : Colors.grey.shade400,
+                            color: tab==0 ? Colors.blue.shade400.withOpacity(0.4) : Colors.transparent,
+                            border: Border.all(
+                              color: tab == 0 ? Colors.green.shade400 : Colors.grey.shade400,
+                              width: 2,
+                            ),
                           ),
                         ),
                       ),
@@ -137,7 +141,11 @@ class _AppHomePageState extends State<AppHomePage> {
                           width: 100,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(50),
-                            color: tab==1 ? Colors.blue.shade400 : Colors.grey.shade400,
+                            color: tab==1 ? Colors.blue.shade400.withOpacity(0.4) : Colors.transparent,
+                            border: Border.all(
+                              color: tab == 1 ? Colors.green.shade400 : Colors.grey.shade400,
+                              width: 2,
+                            ),
                           ),
                         ),
                       ),
@@ -155,7 +163,11 @@ class _AppHomePageState extends State<AppHomePage> {
                           width: 100,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(50),
-                            color: tab==2 ? Colors.blue.shade400 : Colors.grey.shade400,
+                            color: tab==2 ? Colors.blue.shade400.withOpacity(0.4) : Colors.transparent,
+                            border: Border.all(
+                              color: tab == 2 ? Colors.green.shade400 : Colors.grey.shade400,
+                              width: 2,
+                            ),
                           ),
                         ),
                       ),
@@ -173,7 +185,11 @@ class _AppHomePageState extends State<AppHomePage> {
                           width: 100,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(50),
-                            color: tab==3 ? Colors.blue.shade400 : Colors.grey.shade400,
+                            color: tab==3 ? Colors.blue.shade400.withOpacity(0.4) : Colors.transparent,
+                            border: Border.all(
+                              color: tab == 3 ? Colors.green.shade400 : Colors.grey.shade400,
+                              width: 2,
+                            ),
                           ),
                         ),
                       ),
