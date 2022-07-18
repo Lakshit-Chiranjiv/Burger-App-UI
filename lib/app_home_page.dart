@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppHomePage extends StatelessWidget {
   const AppHomePage({Key? key}) : super(key: key);
@@ -47,6 +48,24 @@ class AppHomePage extends StatelessWidget {
                         child: Image.asset('./assets/burger_profile.png'),
                       ),
                     ),
+                  ],
+                ),
+              ),
+              const SizedBox(
+                height: 50,
+              ),
+              Container(
+                width: double.infinity,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Find and order', style: GoogleFonts.poppins(
+                      fontSize: 36,
+                    ),),
+                    Text('Burger for you 🍔', style: GoogleFonts.poppins(
+                      fontSize: 36,
+                      fontWeight: FontWeight.w600,
+                    ),),
                   ],
                 ),
               )
