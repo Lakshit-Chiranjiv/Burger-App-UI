@@ -9,6 +9,9 @@ class AppHomePage extends StatefulWidget {
 }
 
 class _AppHomePageState extends State<AppHomePage> {
+
+  int tab = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -94,7 +97,7 @@ class _AppHomePageState extends State<AppHomePage> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Container(
@@ -105,45 +108,73 @@ class _AppHomePageState extends State<AppHomePage> {
                   scrollDirection: Axis.horizontal,
                   child: Row(
                     children: [
-                      Container(
-                        height: 40,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
-                          color: Colors.blue.shade400
+                      GestureDetector(
+                        onTap: (){
+                          setState(() {
+                            tab = 0;
+                          });
+                        },
+                        child: Container(
+                          height: 40,
+                          width: 100,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            color: tab==0 ? Colors.blue.shade400 : Colors.grey.shade400,
+                          ),
                         ),
                       ),
                       const SizedBox(
                         width: 10,
                       ),
-                      Container(
-                        height: 40,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
-                          color: Colors.blue.shade400
+                      GestureDetector(
+                        onTap: (){
+                          setState(() {
+                            tab = 1;
+                          });
+                        },
+                        child: Container(
+                          height: 40,
+                          width: 100,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            color: tab==1 ? Colors.blue.shade400 : Colors.grey.shade400,
+                          ),
                         ),
                       ),
                       const SizedBox(
                         width: 10,
                       ),
-                      Container(
-                        height: 40,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
-                          color: Colors.blue.shade400
+                      GestureDetector(
+                        onTap: (){
+                          setState(() {
+                            tab = 2;
+                          });
+                        },
+                        child: Container(
+                          height: 40,
+                          width: 100,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            color: tab==2 ? Colors.blue.shade400 : Colors.grey.shade400,
+                          ),
                         ),
                       ),
                       const SizedBox(
                         width: 10,
                       ),
-                      Container(
-                        height: 40,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
-                          color: Colors.blue.shade400
+                      GestureDetector(
+                        onTap: (){
+                          setState(() {
+                            tab = 3;
+                          });
+                        },
+                        child: Container(
+                          height: 40,
+                          width: 100,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            color: tab==3 ? Colors.blue.shade400 : Colors.grey.shade400,
+                          ),
                         ),
                       ),
                       const SizedBox(
