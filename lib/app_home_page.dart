@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class AppHomePage extends StatelessWidget {
+class AppHomePage extends StatefulWidget {
   const AppHomePage({Key? key}) : super(key: key);
 
+  @override
+  State<AppHomePage> createState() => _AppHomePageState();
+}
+
+class _AppHomePageState extends State<AppHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -75,7 +80,7 @@ class AppHomePage extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               TextField(
@@ -88,7 +93,8 @@ class AppHomePage extends StatelessWidget {
                     borderSide: BorderSide.none,
                   ),
                 ),
-              )
+              ),
+              
             ],
           ),
         ),
