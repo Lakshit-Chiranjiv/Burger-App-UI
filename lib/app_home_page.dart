@@ -59,14 +59,34 @@ class AppHomePage extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Find and order', style: GoogleFonts.poppins(
-                      fontSize: 36,
-                    ),),
-                    Text('Burger for you 🍔', style: GoogleFonts.poppins(
-                      fontSize: 36,
-                      fontWeight: FontWeight.w600,
-                    ),),
+                    Text(
+                      'Find and order',
+                      style: GoogleFonts.poppins(
+                        fontSize: 36,
+                      ),
+                    ),
+                    Text(
+                      'Burger for you 🍔',
+                      style: GoogleFonts.poppins(
+                        fontSize: 36,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
                   ],
+                ),
+              ),
+              SizedBox(
+                height: 50,
+              ),
+              TextField(
+                decoration: InputDecoration(
+                  filled: true,
+                  fillColor: Colors.grey.shade300,
+                  prefixIcon: Icon(Icons.search),
+                  hintText: 'Find your Burger',
+                  border: const OutlineInputBorder(
+                    borderSide: BorderSide.none,
+                  ),
                 ),
               )
             ],
