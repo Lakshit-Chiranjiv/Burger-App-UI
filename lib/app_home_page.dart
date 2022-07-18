@@ -15,24 +15,36 @@ class AppHomePage extends StatelessWidget {
             children: [
               Container(
                 width: double.infinity,
-                color: Colors.amber,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
                       width: 50,
                       height: 50,
-                      decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Colors.green,
+                      decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              offset: Offset(3, 3),
+                              color: Colors.brown.shade200.withOpacity(0.5),
+                              blurRadius: 8,
+                            )
+                          ]),
+                      child: const Center(
+                        child: Icon(Icons.menu),
                       ),
                     ),
                     Container(
+                      padding: EdgeInsets.all(5),
                       width: 50,
                       height: 50,
-                      decoration: const BoxDecoration(
+                      decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: Colors.green,
+                        color: Colors.green.shade200,
+                      ),
+                      child: Center(
+                        child: Image.asset('./assets/burger_profile.png'),
                       ),
                     ),
                   ],
