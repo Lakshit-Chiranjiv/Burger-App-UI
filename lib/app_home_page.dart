@@ -22,6 +22,7 @@ class _AppHomePageState extends State<AppHomePage> {
           height: MediaQuery.of(context).size.height,
           child: Column(
             children: [
+              //topbar
               Container(
                 width: double.infinity,
                 child: Row(
@@ -62,6 +63,7 @@ class _AppHomePageState extends State<AppHomePage> {
               const SizedBox(
                 height: 50,
               ),
+              //main text
               Container(
                 width: double.infinity,
                 child: Column(
@@ -86,6 +88,7 @@ class _AppHomePageState extends State<AppHomePage> {
               const SizedBox(
                 height: 50,
               ),
+              //searchbar
               TextField(
                 decoration: InputDecoration(
                   filled: true,
@@ -100,6 +103,7 @@ class _AppHomePageState extends State<AppHomePage> {
               const SizedBox(
                 height: 10,
               ),
+              //tabs 
               Container(
                 width: double.infinity,
                 height: 80,
