@@ -263,7 +263,38 @@ class _AppHomePageState extends State<AppHomePage> {
                     ],
                   ),
                 ),
-              )
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Visibility(
+                visible: tab == 0,
+                child: Container(
+                width: double.infinity,
+                color: Colors.blue,
+                height: 100,
+              )),
+              Visibility(
+                visible: tab == 1,
+                child: Container(
+                width: double.infinity,
+                color: Colors.green,
+                height: 100,
+              )),
+              Visibility(
+                visible: tab == 2,
+                child: Container(
+                width: double.infinity,
+                color: Colors.red,
+                height: 100,
+              )),
+              Visibility(
+                visible: tab == 3,
+                child: Container(
+                width: double.infinity,
+                color: Colors.yellow,
+                height: 100,
+              )),
             ],
           ),
         ),
