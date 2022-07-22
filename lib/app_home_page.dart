@@ -267,6 +267,17 @@ class _AppHomePageState extends State<AppHomePage> {
               const SizedBox(
                 height: 20,
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text('Most Popular', style: GoogleFonts.poppins(
+                    fontSize: 20,
+                  ),),
+                ],
+              ),
+              const SizedBox(
+                height: 10,
+              ),
               Visibility(
                 visible: tab == 0,
                 child: Container(
