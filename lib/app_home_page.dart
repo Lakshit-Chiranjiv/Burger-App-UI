@@ -393,16 +393,10 @@ class _AppHomePageState extends State<AppHomePage> {
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(10),
                                     color: Colors.white,
-                                    boxShadow: const [
+                                    boxShadow: [
                                       BoxShadow(
-                                        color: Colors.grey,
-                                        offset: Offset(2, 2),
-                                        blurRadius: 3,
-                                      ),
-                                      BoxShadow(
-                                        color: Colors.grey,
-                                        offset: Offset(-2, -2),
-                                        blurRadius: 3,
+                                        color: Colors.black.withOpacity(0.3),
+                                        blurRadius: 5,
                                       ),
                                     ]),
                                 child: Padding(
