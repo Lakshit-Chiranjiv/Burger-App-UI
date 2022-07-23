@@ -15,10 +15,9 @@ class _AppHomePageState extends State<AppHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
-          physics: const BouncingScrollPhysics(),
+      body: SingleChildScrollView(
+        physics: const BouncingScrollPhysics(),
+        child: SafeArea(
           child: Container(
             padding: const EdgeInsets.all(20),
             width: MediaQuery.of(context).size.width,
@@ -286,28 +285,28 @@ class _AppHomePageState extends State<AppHomePage> {
                   child: Container(
                   width: double.infinity,
                   color: Colors.blue,
-                  height: 500,
+                  height: 300,
                 )),
                 Visibility(
                   visible: tab == 1,
                   child: Container(
                   width: double.infinity,
                   color: Colors.green,
-                  height: 100,
+                  height: 300,
                 )),
                 Visibility(
                   visible: tab == 2,
                   child: Container(
                   width: double.infinity,
                   color: Colors.red,
-                  height: 100,
+                  height: 300,
                 )),
                 Visibility(
                   visible: tab == 3,
                   child: Container(
                   width: double.infinity,
                   color: Colors.yellow,
-                  height: 100,
+                  height: 300,
                 )),
               ],
             ),
