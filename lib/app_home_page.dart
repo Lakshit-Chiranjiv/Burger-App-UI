@@ -15,35 +15,35 @@ class _AppHomePageState extends State<AppHomePage> {
     {
       'name': 'Beef burger 1',
       'image': './assets/burger1.png',
-      'price': '\$ 12.99',
+      'price': '12.99',
       'rating': '4.8',
       'distance': '5.2 km'
     },
     {
       'name': 'Beef burger 2',
       'image': './assets/burger2.jpg',
-      'price': '\$ 07.99',
+      'price': '07.99',
       'rating': '4.3',
       'distance': '4.7 km'
     },
     {
       'name': 'Beef burger 3',
       'image': './assets/burger3.jpg',
-      'price': '\$ 17.99',
+      'price': '17.99',
       'rating': '4.9',
       'distance': '2.5 km'
     },
     {
       'name': 'Beef burger 4',
       'image': './assets/burger4.jpg',
-      'price': '\$ 13.99',
+      'price': '13.99',
       'rating': '4.6',
       'distance': '5.8 km'
     },
     {
       'name': 'Beef burger 5',
       'image': './assets/burger5.jpg',
-      'price': '\$ 19.99',
+      'price': '19.99',
       'rating': '5.0',
       'distance': '8.5 km'
     },
@@ -429,10 +429,8 @@ class _AppHomePageState extends State<AppHomePage> {
                                         mainAxisAlignment:
                                             MainAxisAlignment.center,
                                         children: [
-                                          Icon(
-                                            Icons.star,
-                                            color: Colors.yellow[800]
-                                          ),
+                                          Icon(Icons.star,
+                                              color: Colors.yellow[800]),
                                           const SizedBox(
                                             width: 5,
                                           ),
@@ -458,7 +456,33 @@ class _AppHomePageState extends State<AppHomePage> {
                                             ),
                                           ),
                                         ],
-                                      )
+                                      ),
+                                      const SizedBox(
+                                        height: 10,
+                                      ),
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            '\$',
+                                            style: GoogleFonts.poppins(
+                                                fontSize: 20,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.green),
+                                          ),
+                                          const SizedBox(
+                                            width: 7,
+                                          ),
+                                          Text(
+                                            burgerData[index]['price'],
+                                            style: GoogleFonts.poppins(
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
                                     ],
                                   ),
                                 ),
