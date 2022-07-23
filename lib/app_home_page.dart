@@ -14,7 +14,7 @@ class _AppHomePageState extends State<AppHomePage> {
   List burgerData = [
     {
       'name': 'Beef burger 1',
-      'image': './assets/burger1.jpg',
+      'image': './assets/burger1.png',
       'price': '\$ 12.99',
       'rating': '4.8',
       'distance': '5.2 km'
@@ -372,28 +372,62 @@ class _AppHomePageState extends State<AppHomePage> {
                     visible: tab == 0,
                     child: Container(
                       width: double.infinity,
-                      color: Colors.blue,
                       height: 300,
                       child: GridView.builder(
-                        shrinkWrap: true,
-                        physics: BouncingScrollPhysics(),
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 1,
-                        childAspectRatio: MediaQuery.of(context).size.width / (MediaQuery.of(context).size.height/2)),
-                        itemCount: burgerData.length,
-                        scrollDirection: Axis.horizontal,
-                        itemBuilder: (context,index){
-                          return Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Container(
-                              child: Text('${burgerData[index]['name']}'),
-                              margin: EdgeInsets.only(right: 10),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                color: Colors.white
+                          shrinkWrap: true,
+                          physics: BouncingScrollPhysics(),
+                          gridDelegate:
+                              SliverGridDelegateWithFixedCrossAxisCount(
+                                  crossAxisCount: 1,
+                                  childAspectRatio:
+                                      MediaQuery.of(context).size.width /
+                                          (MediaQuery.of(context).size.height /
+                                              2.5)),
+                          itemCount: burgerData.length,
+                          scrollDirection: Axis.horizontal,
+                          itemBuilder: (context, index) {
+                            return Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                margin: EdgeInsets.only(right: 10),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    color: Colors.white,
+                                    boxShadow: const [
+                                      BoxShadow(
+                                        color: Colors.grey,
+                                        offset: Offset(2, 2),
+                                        blurRadius: 3,
+                                      ),
+                                      BoxShadow(
+                                        color: Colors.grey,
+                                        offset: Offset(-2, -2),
+                                        blurRadius: 3,
+                                      ),
+                                    ]),
+                                child: Padding(
+                                  padding: EdgeInsets.all(8.0),
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                        height: 150,
+                                        width: double.infinity,
+                                        color: Colors.black,
+                                        child: Image.asset(
+                                          burgerData[index]['image'],
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                      const SizedBox(
+                                        height: 10,
+                                      ),
+                                      Text(burgerData[index]['name'])
+                                    ],
+                                  ),
+                                ),
                               ),
-                            ),
-                          );
-                        }),
+                            );
+                          }),
                     )),
                 Visibility(
                     visible: tab == 1,
