@@ -381,8 +381,16 @@ class _AppHomePageState extends State<AppHomePage> {
                         itemCount: burgerData.length,
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context,index){
-                          return Container(
-                            child: Text('${burgerData[index]['name']}'),
+                          return Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              child: Text('${burgerData[index]['name']}'),
+                              margin: EdgeInsets.only(right: 10),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                color: Colors.white
+                              ),
+                            ),
                           );
                         }),
                     )),
