@@ -9,7 +9,6 @@ class AppHomePage extends StatefulWidget {
 }
 
 class _AppHomePageState extends State<AppHomePage> {
-
   int tab = 0;
 
   List burgerData = [
@@ -143,7 +142,7 @@ class _AppHomePageState extends State<AppHomePage> {
                 const SizedBox(
                   height: 10,
                 ),
-                //tabs 
+                //tabs
                 Container(
                   width: double.infinity,
                   height: 80,
@@ -153,7 +152,7 @@ class _AppHomePageState extends State<AppHomePage> {
                     child: Row(
                       children: [
                         GestureDetector(
-                          onTap: (){
+                          onTap: () {
                             setState(() {
                               tab = 0;
                             });
@@ -163,34 +162,46 @@ class _AppHomePageState extends State<AppHomePage> {
                             width: 100,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(50),
-                              color: tab==0 ? Colors.blue.shade400.withOpacity(0.4) : Colors.transparent,
+                              color: tab == 0
+                                  ? Colors.blue.shade400.withOpacity(0.4)
+                                  : Colors.transparent,
                               border: Border.all(
-                                color: tab == 0 ? Colors.green.shade400 : Colors.grey.shade400,
+                                color: tab == 0
+                                    ? Colors.green.shade400
+                                    : Colors.grey.shade400,
                                 width: 2,
                               ),
                             ),
                             child: Center(
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  const Text('🍖', style: TextStyle(
+                                child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                const Text(
+                                  '🍖',
+                                  style: TextStyle(
                                     fontSize: 16,
-                                  ),),
-                                  const SizedBox(width: 5,),
-                                  Text('Beef', style: TextStyle(
-                                    fontSize: 16,
-                                    color: tab==0 ? Colors.black : Colors.grey.shade500
-                                  ),)
-                                ],
-                              )
-                            ),
+                                  ),
+                                ),
+                                const SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  'Beef',
+                                  style: TextStyle(
+                                      fontSize: 16,
+                                      color: tab == 0
+                                          ? Colors.black
+                                          : Colors.grey.shade500),
+                                )
+                              ],
+                            )),
                           ),
                         ),
                         const SizedBox(
                           width: 10,
                         ),
                         GestureDetector(
-                          onTap: (){
+                          onTap: () {
                             setState(() {
                               tab = 1;
                             });
@@ -200,34 +211,46 @@ class _AppHomePageState extends State<AppHomePage> {
                             width: 100,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(50),
-                              color: tab==1 ? Colors.blue.shade400.withOpacity(0.4) : Colors.transparent,
+                              color: tab == 1
+                                  ? Colors.blue.shade400.withOpacity(0.4)
+                                  : Colors.transparent,
                               border: Border.all(
-                                color: tab == 1 ? Colors.green.shade400 : Colors.grey.shade400,
+                                color: tab == 1
+                                    ? Colors.green.shade400
+                                    : Colors.grey.shade400,
                                 width: 2,
                               ),
                             ),
                             child: Center(
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  const Text('🧀', style: TextStyle(
+                                child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                const Text(
+                                  '🧀',
+                                  style: TextStyle(
                                     fontSize: 16,
-                                  ),),
-                                  const SizedBox(width: 5,),
-                                  Text('Cheese', style: TextStyle(
-                                    fontSize: 16,
-                                    color: tab==1 ? Colors.black : Colors.grey.shade500
-                                  ),)
-                                ],
-                              )
-                            ),
+                                  ),
+                                ),
+                                const SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  'Cheese',
+                                  style: TextStyle(
+                                      fontSize: 16,
+                                      color: tab == 1
+                                          ? Colors.black
+                                          : Colors.grey.shade500),
+                                )
+                              ],
+                            )),
                           ),
                         ),
                         const SizedBox(
                           width: 10,
                         ),
                         GestureDetector(
-                          onTap: (){
+                          onTap: () {
                             setState(() {
                               tab = 2;
                             });
@@ -237,34 +260,46 @@ class _AppHomePageState extends State<AppHomePage> {
                             width: 100,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(50),
-                              color: tab==2 ? Colors.blue.shade400.withOpacity(0.4) : Colors.transparent,
+                              color: tab == 2
+                                  ? Colors.blue.shade400.withOpacity(0.4)
+                                  : Colors.transparent,
                               border: Border.all(
-                                color: tab == 2 ? Colors.green.shade400 : Colors.grey.shade400,
+                                color: tab == 2
+                                    ? Colors.green.shade400
+                                    : Colors.grey.shade400,
                                 width: 2,
                               ),
                             ),
                             child: Center(
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  const Text('🍕', style: TextStyle(
+                                child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                const Text(
+                                  '🍕',
+                                  style: TextStyle(
                                     fontSize: 16,
-                                  ),),
-                                  const SizedBox(width: 5,),
-                                  Text('Pizza', style: TextStyle(
-                                    fontSize: 16,
-                                    color: tab==2 ? Colors.black : Colors.grey.shade500
-                                  ),)
-                                ],
-                              )
-                            ),
+                                  ),
+                                ),
+                                const SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  'Pizza',
+                                  style: TextStyle(
+                                      fontSize: 16,
+                                      color: tab == 2
+                                          ? Colors.black
+                                          : Colors.grey.shade500),
+                                )
+                              ],
+                            )),
                           ),
                         ),
                         const SizedBox(
                           width: 10,
                         ),
                         GestureDetector(
-                          onTap: (){
+                          onTap: () {
                             setState(() {
                               tab = 3;
                             });
@@ -274,27 +309,39 @@ class _AppHomePageState extends State<AppHomePage> {
                             width: 100,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(50),
-                              color: tab==3 ? Colors.blue.shade400.withOpacity(0.4) : Colors.transparent,
+                              color: tab == 3
+                                  ? Colors.blue.shade400.withOpacity(0.4)
+                                  : Colors.transparent,
                               border: Border.all(
-                                color: tab == 3 ? Colors.green.shade400 : Colors.grey.shade400,
+                                color: tab == 3
+                                    ? Colors.green.shade400
+                                    : Colors.grey.shade400,
                                 width: 2,
                               ),
                             ),
                             child: Center(
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text('🍥', style: TextStyle(
+                                child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  '🍥',
+                                  style: TextStyle(
                                     fontSize: 16,
-                                  ),),
-                                  SizedBox(width: 5,),
-                                  Text('Ramen', style: TextStyle(
-                                    fontSize: 16,
-                                    color: tab==3 ? Colors.black : Colors.grey.shade500
-                                  ),)
-                                ],
-                              )
-                            ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  'Ramen',
+                                  style: TextStyle(
+                                      fontSize: 16,
+                                      color: tab == 3
+                                          ? Colors.black
+                                          : Colors.grey.shade500),
+                                )
+                              ],
+                            )),
                           ),
                         ),
                         const SizedBox(
@@ -310,42 +357,56 @@ class _AppHomePageState extends State<AppHomePage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text('Most Popular', style: GoogleFonts.poppins(
-                      fontSize: 20,
-                    ),),
+                    Text(
+                      'Most Popular',
+                      style: GoogleFonts.poppins(
+                        fontSize: 20,
+                      ),
+                    ),
                   ],
                 ),
                 const SizedBox(
                   height: 10,
                 ),
                 Visibility(
-                  visible: tab == 0,
-                  child: Container(
-                  width: double.infinity,
-                  color: Colors.blue,
-                  height: 300,
-                )),
+                    visible: tab == 0,
+                    child: Container(
+                      width: double.infinity,
+                      color: Colors.blue,
+                      height: 300,
+                      child: GridView.builder(
+                        shrinkWrap: true,
+                        physics: BouncingScrollPhysics(),
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 1),
+                        itemCount: burgerData.length,
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context,index){
+                          return Container(
+                            child: Text('${burgerData[index]['name']}'),
+                          );
+                        }),
+                    )),
                 Visibility(
-                  visible: tab == 1,
-                  child: Container(
-                  width: double.infinity,
-                  color: Colors.green,
-                  height: 300,
-                )),
+                    visible: tab == 1,
+                    child: Container(
+                      width: double.infinity,
+                      color: Colors.green,
+                      height: 300,
+                    )),
                 Visibility(
-                  visible: tab == 2,
-                  child: Container(
-                  width: double.infinity,
-                  color: Colors.red,
-                  height: 300,
-                )),
+                    visible: tab == 2,
+                    child: Container(
+                      width: double.infinity,
+                      color: Colors.red,
+                      height: 300,
+                    )),
                 Visibility(
-                  visible: tab == 3,
-                  child: Container(
-                  width: double.infinity,
-                  color: Colors.yellow,
-                  height: 300,
-                )),
+                    visible: tab == 3,
+                    child: Container(
+                      width: double.infinity,
+                      color: Colors.yellow,
+                      height: 300,
+                    )),
               ],
             ),
           ),
