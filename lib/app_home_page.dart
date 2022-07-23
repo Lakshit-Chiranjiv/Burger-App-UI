@@ -14,35 +14,35 @@ class _AppHomePageState extends State<AppHomePage> {
   List burgerData = [
     {
       'name': 'Beef burger 1',
-      'image': '',
+      'image': './assets/burger1.jpg',
       'price': '\$ 12.99',
       'rating': '4.8',
       'distance': '5.2 km'
     },
     {
       'name': 'Beef burger 2',
-      'image': '',
+      'image': './assets/burger2.jpg',
       'price': '\$ 07.99',
       'rating': '4.3',
       'distance': '4.7 km'
     },
     {
       'name': 'Beef burger 3',
-      'image': '',
+      'image': './assets/burger3.jpg',
       'price': '\$ 17.99',
       'rating': '4.9',
       'distance': '2.5 km'
     },
     {
       'name': 'Beef burger 4',
-      'image': '',
+      'image': './assets/burger4.jpg',
       'price': '\$ 13.99',
       'rating': '4.6',
       'distance': '5.8 km'
     },
     {
       'name': 'Beef burger 5',
-      'image': '',
+      'image': './assets/burger5.jpg',
       'price': '\$ 19.99',
       'rating': '5.0',
       'distance': '8.5 km'
@@ -377,7 +377,8 @@ class _AppHomePageState extends State<AppHomePage> {
                       child: GridView.builder(
                         shrinkWrap: true,
                         physics: BouncingScrollPhysics(),
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 1),
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 1,
+                        childAspectRatio: MediaQuery.of(context).size.width / (MediaQuery.of(context).size.height/2)),
                         itemCount: burgerData.length,
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context,index){
