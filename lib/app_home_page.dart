@@ -415,7 +415,13 @@ class _AppHomePageState extends State<AppHomePage> {
                                       const SizedBox(
                                         height: 10,
                                       ),
-                                      Text(burgerData[index]['name'])
+                                      Text(
+                                        burgerData[index]['name'],
+                                        style: GoogleFonts.poppins(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      )
                                     ],
                                   ),
                                 ),
