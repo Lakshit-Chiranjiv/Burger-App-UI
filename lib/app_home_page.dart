@@ -12,6 +12,44 @@ class _AppHomePageState extends State<AppHomePage> {
 
   int tab = 0;
 
+  List burgerData = [
+    {
+      'name': 'Beef burger 1',
+      'image': '',
+      'price': '\$ 12.99',
+      'rating': '4.8',
+      'distance': '5.2 km'
+    },
+    {
+      'name': 'Beef burger 2',
+      'image': '',
+      'price': '\$ 07.99',
+      'rating': '4.3',
+      'distance': '4.7 km'
+    },
+    {
+      'name': 'Beef burger 3',
+      'image': '',
+      'price': '\$ 17.99',
+      'rating': '4.9',
+      'distance': '2.5 km'
+    },
+    {
+      'name': 'Beef burger 4',
+      'image': '',
+      'price': '\$ 13.99',
+      'rating': '4.6',
+      'distance': '5.8 km'
+    },
+    {
+      'name': 'Beef burger 5',
+      'image': '',
+      'price': '\$ 19.99',
+      'rating': '5.0',
+      'distance': '8.5 km'
+    },
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -135,10 +173,10 @@ class _AppHomePageState extends State<AppHomePage> {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Text('🍖', style: TextStyle(
+                                  const Text('🍖', style: TextStyle(
                                     fontSize: 16,
                                   ),),
-                                  SizedBox(width: 5,),
+                                  const SizedBox(width: 5,),
                                   Text('Beef', style: TextStyle(
                                     fontSize: 16,
                                     color: tab==0 ? Colors.black : Colors.grey.shade500
@@ -172,10 +210,10 @@ class _AppHomePageState extends State<AppHomePage> {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Text('🧀', style: TextStyle(
+                                  const Text('🧀', style: TextStyle(
                                     fontSize: 16,
                                   ),),
-                                  SizedBox(width: 5,),
+                                  const SizedBox(width: 5,),
                                   Text('Cheese', style: TextStyle(
                                     fontSize: 16,
                                     color: tab==1 ? Colors.black : Colors.grey.shade500
@@ -209,10 +247,10 @@ class _AppHomePageState extends State<AppHomePage> {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Text('🍕', style: TextStyle(
+                                  const Text('🍕', style: TextStyle(
                                     fontSize: 16,
                                   ),),
-                                  SizedBox(width: 5,),
+                                  const SizedBox(width: 5,),
                                   Text('Pizza', style: TextStyle(
                                     fontSize: 16,
                                     color: tab==2 ? Colors.black : Colors.grey.shade500
